@@ -1,0 +1,33 @@
+.hero {
+  position: relative;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding-bottom: 0;
+}
+.hero__img {
+  display: block;
+  width: 100%;
+}
+.hero__phone {
+  display: none;
+  @media screen and (min-width: 1025px) {
+    display: block;
+    position: absolute;
+    bottom: 28px;
+    right: 28px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-color: var(--interactive-color);
+    background-color: var(--interactive-color);
+    cursor: pointer;
+    align-items: center;
+  }
+}
+.hero__phone:hover {
+  background: var(--hover-color);
+}
+.hero-text {
+  margin-bottom: 52px;
+  color: var(--span-color);
+}

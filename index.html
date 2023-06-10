@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>hw-03</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/main.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="index.html">
+          <img
+            src="./images/logo/logo.svg"
+            alt="logo"
+          />
+        </a>
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="header__item">
+            <a href="./pages/about.html">О нас</a>
+          </li>
+          <li class="header__item">
+            <a href="./pages/why_we.html">Почему мы</a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="open"
+          onclick="openModal()"
+        >
+          <img
+            src="./images/modal/open.svg"
+            alt="switcher mobile menu"
+          />
+        </button>
+        <button
+          type="button"
+          class="close is-hidden"
+          onclick="closeModal()"
+        >
+          <img
+            src="./images/modal/close.svg"
+            alt="switcher mobile menu"
+          />
+        </button>
+      </nav>
+    </header>
+    <div class="container">
+      <section class="hero">
+        <span class="span--blue">Привет дорогой</span>
+        <div class="title__wrapper">
+          <h1>
+            Мы делаем доступными книги
+            <span class="text--color">для всех.</span>
+          </h1>
+          <div class="text__wrapper">
+            <p class="hero-text">
+              It's a dangerous business, Frodo, going out your door. You step
+              onto the road Where the Shadows lie.
+            </p>
+          </div>
+        </div>
+        <picture>
+          <source
+            srcset="./images/hero/books.png"
+            media="(max-width: 1024px)"
+          />
+          <source
+            srcset="./images/hero/desktop_book.png"
+            media="(min-width: 1025px)"
+          />
+          <img
+            class="hero__img"
+            src="./images/hero/desktop_book.png"
+            alt="boy"
+          />
+        </picture>
+        <button class="hero__phone">
+          <img
+            src="./images/icons/phone_call.svg"
+            alt="phone"
+          />
+        </button>
+      </section>
+      <section class="bg--color">
+        <img
+          src="./images/icons/gold_star.png"
+          alt="Gold Star"
+          width="48"
+          height="48"
+        />
+        <h2 class="describe__title">Компания для молодят</h2>
+        <p class="describe-text">
+          Home is behind, the world ahead and there are many paths to tread
+          through shadows to the edge.
+        </p>
+      </section>
+      <section class="using">
+        <div class="using__girl">
+          <div>
+            <picture>
+              <source
+                srcset="./images/using/girl.png"
+                media="(max-width: 1024px)"
+              />
+              <source
+                srcset="./images/using/desktop_girl.png"
+                media="(min-width: 1025px)"
+              />
+              <img
+                src="./images/using/desktop_girl.png"
+                alt="girl"
+              />
+            </picture>
+          </div>
+          <div class="using__info">
+            <h2 class="using__title">
+              It’s easy to use our
+              <span class="text--color">Wireframe & UI Kit.</span>
+            </h2>
+            <div class="using_container-text">
+              <p class="using__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                viverra sit feugiat donec sodales quam felis proin. A pharetra,
+              </p>
+              <p class="using__text">
+                Urna dui sem duis. Leo aenean placerat nisl euismod. Arcu,
+                placerat dui, nunc, egestas suspendisse. Aliquam tincidunt.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="using__boy">
+          <div>
+            <picture>
+              <source
+                srcset="./images/using/boy.png"
+                media="(max-width: 1024px)"
+              />
+              <source
+                srcset="./images/using/desktop_boy.png"
+                media="(min-width: 1025px)"
+              />
+              <img
+                src="./images/using/desktop_boy.png"
+                alt="boy"
+              />
+            </picture>
+          </div>
+          <div class="using__info">
+            <h2 class="using__title">
+              Just drop elements and
+              <span class="text--color">the text.</span>
+            </h2>
+            <div class="using_container-text">
+              <p class="using__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                viverra sit feugiat donec sodales quam felis proin. A pharetra,
+              </p>
+              <p class="using__text">
+                Urna dui sem duis. Leo aenean placerat nisl euismod. Arcu,
+                placerat dui, nunc, egestas suspendisse. Aliquam tincidunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <h2 class="features__title">Features</h2>
+        <p class="features__text">
+          Home is behind, the world ahead and there are many paths to tread
+          through shadows to the edge, world ahead and there are.
+        </p>
+        <button
+          class="features__button"
+          type="button"
+        >
+          Позвонить
+        </button>
+        <ul class="features__list">
+          <li class="features__item">
+            <img
+              src="./images/features/speed.svg"
+              alt="speed"
+              width="48"
+              height="48"
+            />
+            <h3>Speed</h3>
+            <p>It's a dangerous business, Frodo, going out your door.</p>
+          </li>
+          <li class="features__item">
+            <img
+              src="./images/features/dashboard.svg"
+              alt="dashboard"
+              width="48"
+              height="48"
+            />
+            <h3>Dashboard</h3>
+            <p>It's a dangerous business, Frodo, going out your door.</p>
+          </li>
+          <li class="features__item">
+            <img
+              src="./images/features/conversation.svg"
+              alt="conversation"
+              width="48"
+              height="48"
+            />
+            <h3>Conversation</h3>
+            <p>It's a dangerous business, Frodo, going out your door.</p>
+          </li>
+          <li class="features__item">
+            <img
+              src="./images/features/time_zone.svg"
+              alt="time zone"
+              width="48"
+              height="48"
+            />
+            <h3>Time Zone</h3>
+            <p>It's a dangerous business, Frodo, going out your door.</p>
+          </li>
+          <li class="features__item">
+            <img
+              src="./images/features/checkmark.svg"
+              alt="checkmark"
+              width="48"
+              height="48"
+            />
+            <h3>Checkmark</h3>
+            <p>It's a dangerous business, Frodo, going out your door.</p>
+          </li>
+          <li class="features__item">
+            <img
+              src="./images/features/pazzle_heart.svg"
+              alt="pazzle heart"
+              width="48"
+              height="48"
+            />
+            <h3>Pazzle Heart</h3>
+            <p>It's a dangerous business, Frodo, going out your door.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="subscribe">
+        <span class="span--blue">Great Features</span>
+        <h2>Подписаться</h2>
+        <p class="subscribe__text">
+          Home is behind, the world ahead and there are many paths to tread
+          through shadows to the edge, world ahead and there are.
+        </p>
+        <div class="input-container">
+          <input
+            class="subscribe__input"
+            type="text"
+            placeholder="Ваш емейл..."
+          />
+          <button
+            class="subscribe__button"
+            type="submit"
+          >
+            Подписаться
+          </button>
+        </div>
+      </section>
+      <div class="footer__picture">
+        <picture>
+          <source
+            srcset="./images/footer/footer.png"
+            media="(max-width: 1024px)"
+          />
+          <source
+            srcset="./images/footer/desktop_footer.png"
+            media="(min-width: 1025px)"
+          />
+          <img
+            src="./images/footer/desktop_footer.png"
+            alt="boy"
+          />
+        </picture>
+      </div>
+      <footer class="footer">
+        <ul class="footer-list">
+          <li class="footer__item">
+            <span>Copyright © 2021 Geekout Inc. All rights reserved.</span>
+          </li>
+          <li class="footer__item">
+            <a
+              href="#"
+              class="footer__link"
+              >Privacy policy</a
+            >
+          </li>
+          <li class="footer__item">
+            <a href="#">Security</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">Terms of service</a>
+          </li>
+        </ul>
+        <ul class="footer_icons">
+          <li>
+            <a
+              href="https://web.telegram.org/"
+              target="_blank"
+            >
+              <img
+                src="./images/social_icons/telegram.svg"
+                alt="telegram"
+                width="24"
+                height="24"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://uk-ua.facebook.com/"
+              target="_blank"
+            >
+              <img
+                src="./images/social_icons/facebook.svg"
+                alt="facebook"
+                width="24"
+                height="24"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+            >
+              <img
+                src="./images/social_icons/linkedin.svg"
+                alt="linkedin"
+                width="24"
+                height="24"
+              />
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <div class="modal is-hidden">
+      <ul class="modal__list">
+        <li class="modal__item">
+          <a href="./index.html">Главная</a>
+        </li>
+        <li class="modal__item">
+          <a href="./pages/about.html">О нас</a>
+        </li>
+        <li class="modal__item">
+          <a href="./pages/why_we.html">Почему мы</a>
+        </li>
+      </ul>
+      <div class="modal__social">
+        <div class="icons-wrapper">
+          <a
+            href="https://web.telegram.org/"
+            target="_blank"
+          >
+            <img
+              src="./images/social_icons/modal_telegram.svg"
+              alt="telegram"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a
+            href="https://uk-ua.facebook.com/"
+            target="_blank"
+          >
+            <img
+              src="./images/social_icons/modal_facebook.svg"
+              alt="facebook"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+          >
+            <img
+              src="./images/social_icons/modal_linkedin.svg"
+              alt="linkedin"
+              width="24"
+              height="24"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
+  </body>
+</html>

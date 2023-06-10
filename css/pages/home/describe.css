@@ -1,0 +1,10 @@
+.describe__title {
+  margin-top: 34px;
+  color: var(--secondary-color);
+}
+.describe-text {
+  color: var(--secondary-color);
+  @media screen and (min-width: 1025px) {
+    width: 458px;
+  }
+}

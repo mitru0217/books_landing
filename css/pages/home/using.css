@@ -1,0 +1,44 @@
+.using {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: var(--secondary-color);
+}
+
+.using__title {
+  padding-top: 40px;
+}
+.using__girl {
+  padding-bottom: 64px;
+  @media screen and (min-width: 1025px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.using__boy {
+  @media screen and (min-width: 1025px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.using__info {
+  @media screen and (min-width: 1025px) {
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.using_container-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.using__text {
+  text-align: start;
+}

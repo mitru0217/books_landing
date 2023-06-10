@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>hw-03</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/main.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="index.html">
+          <img
+            src="../images/logo/logo.svg"
+            alt="logo"
+          />
+        </a>
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="../index.html">Главная</a>
+          </li>
+          <li class="header__item">
+            <a href="about.html">О нас</a>
+          </li>
+          <li class="header__item">
+            <a href="./why_we.html">Почему мы</a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="open"
+          onclick="openModal()"
+        >
+          <img
+            src="../images/modal/open.svg"
+            alt="switcher mobile menu"
+          />
+        </button>
+        <button
+          type="button"
+          class="close is-hidden"
+          onclick="closeModal()"
+        >
+          <img
+            src="../images/modal/close.svg"
+            alt="switcher mobile menu"
+          />
+        </button>
+      </nav>
+    </header>
+
+    <section class="main__section">
+      <h1>About</h1>
+    </section>
+    <div class="footer__picture">
+      <picture>
+        <source
+          srcset="../images/footer/footer.png"
+          media="(max-width: 1024px)"
+        />
+        <source
+          srcset="../images/footer/desktop_footer.png"
+          media="(min-width: 1025px)"
+        />
+        <img
+          src="../images/footer/desktop_footer.png"
+          alt="boy"
+        />
+      </picture>
+    </div>
+    <div class="container">
+      <footer class="footer">
+        <ul class="footer-list">
+          <li class="footer__item">
+            <span>Copyright © 2021 Geekout Inc. All rights reserved.</span>
+          </li>
+          <li class="footer__item">
+            <a
+              href="#"
+              class="footer__link"
+              >Privacy policy</a
+            >
+          </li>
+          <li class="footer__item">
+            <a href="#">Security</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">Terms of service</a>
+          </li>
+        </ul>
+        <ul class="footer_icons">
+          <li>
+            <a
+              href="https://web.telegram.org/"
+              target="_blank"
+            >
+              <img
+                src="../images/social_icons/telegram.svg"
+                alt="telegram"
+                width="24"
+                height="24"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://uk-ua.facebook.com/"
+              target="_blank"
+            >
+              <img
+                src="../images/social_icons/facebook.svg"
+                alt="facebook"
+                width="24"
+                height="24"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+            >
+              <img
+                src="../images/social_icons/linkedin.svg"
+                alt="linkedin"
+                width="24"
+                height="24"
+              />
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <div class="modal is-hidden">
+      <ul class="modal__list">
+        <li class="modal__item">
+          <a href="../index.html">Главная</a>
+        </li>
+        <li class="modal__item">
+          <a href="./about.html">О нас</a>
+        </li>
+        <li class="modal__item">
+          <a href="./why_we.html">Почему мы</a>
+        </li>
+      </ul>
+      <div class="modal__social">
+        <div class="icons-wrapper">
+          <a
+            href="https://web.telegram.org/"
+            target="_blank"
+          >
+            <img
+              src="../images/social_icons/modal_telegram.svg"
+              alt="telegram"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a
+            href="https://uk-ua.facebook.com/"
+            target="_blank"
+          >
+            <img
+              src="../images/social_icons/modal_facebook.svg"
+              alt="facebook"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+          >
+            <img
+              src="../images/social_icons/modal_linkedin.svg"
+              alt="linkedin"
+              width="24"
+              height="24"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="../modal.js"></script>
+  </body>
+</html>
